@@ -18,6 +18,11 @@
       "dependsOn": ["^build", "^db:generate"],
       "outputs": [".next/**", ".expo/**", "dist/**"]
     },
+    "start": {
+      "dependsOn": ["^build", "^db:generate"],
+      "persistent": true,
+      "cache": false
+    },
     "lint": {
       "dependsOn": ["build"]
     },
